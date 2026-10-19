@@ -13,6 +13,7 @@ mkdir -p "$P/dist"
 cp dist/index.js "$P/dist/"
 cp main.py cleanmic.py plugin.json package.json README.md CHANGELOG.md LICENSE "$P/"
 mkdir -p "$OUT_DIR"
+OUT_DIR="$(cd "$OUT_DIR" && pwd)"   # absolute: the zip is written from inside the stage dir
 OUT="$OUT_DIR/clean-mic-$VERSION.zip"
 rm -f "$OUT"
 (cd "$STAGE" && python3 -m zipfile -c "$OUT" "Clean Mic")
