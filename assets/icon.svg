@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Clean Mic logo (original artwork, BSD-3 with the project) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2a3d"/>
+      <stop offset="1" stop-color="#16495e"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <path d="M60 236 l28 -40 l28 72 l28 -100 l28 92" fill="none" stroke="#5d7684" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M368 236 h84" stroke="#4fd1c5" stroke-width="16" stroke-linecap="round"/>
+  <rect x="196" y="90" width="120" height="200" rx="60" fill="#e8f4f8"/>
+  <path d="M152 236 a104 104 0 0 0 208 0" fill="none" stroke="#e8f4f8" stroke-width="22" stroke-linecap="round"/>
+  <path d="M256 340 v52 M206 400 h100" stroke="#e8f4f8" stroke-width="22" stroke-linecap="round"/>
+  <path d="M226 160 h60 M226 200 h60" stroke="#16495e" stroke-width="12" stroke-linecap="round"/>
+</svg>

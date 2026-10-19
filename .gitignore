@@ -1,0 +1,13 @@
+node_modules/
+dist/
+out/
+*.zip
+*.map
+__pycache__/
+*.pyc
+.vscode/settings.json
+settings.json
+state.json
+*.wav
+*.log
+.DS_Store

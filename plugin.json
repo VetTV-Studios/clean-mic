@@ -1,0 +1,11 @@
+{
+  "name": "Clean Mic",
+  "author": "Vet",
+  "flags": [],
+  "api_version": 1,
+  "publish": {
+    "tags": ["audio", "microphone", "noise-suppression", "pipewire", "utility"],
+    "description": "A noise-cancelled virtual microphone for voice chat, streaming and recording. It uses the RNNoise filter your OS already ships, runs as your user, and leaves your audio setup untouched when it's off.",
+    "image": "https://raw.githubusercontent.com/VetTV-Studios/clean-mic/main/assets/logo.png"
+  }
+}

@@ -1,0 +1,413 @@
+[
+ {
+  "id": 39,
+  "type": "PipeWire:Interface:Metadata",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x"
+  ],
+  "props": {
+   "client.id": 32,
+   "factory.id": 6,
+   "metadata.name": "default",
+   "module.id": 5,
+   "object.serial": 40
+  },
+  "metadata": [
+   {
+    "subject": 0,
+    "key": "default.audio.sink",
+    "type": "Spa:String:JSON",
+    "value": {
+     "name": "fake_speakers"
+    }
+   },
+   {
+    "subject": 0,
+    "key": "default.audio.source",
+    "type": "Spa:String:JSON",
+    "value": {
+     "name": "fake_speakers"
+    }
+   }
+  ]
+ },
+ {
+  "id": 48,
+  "type": "PipeWire:Interface:Node",
+  "info": {
+   "state": "suspended",
+   "props": {
+    "audio.position": "[FL FR]",
+    "media.class": "Audio/Sink",
+    "node.driver": true,
+    "node.loop.name": "data-loop.0",
+    "node.name": "fake_speakers"
+   },
+   "params": {
+    "Props": [
+     {
+      "volume": 1.0,
+      "mute": false,
+      "channelVolumes": [
+       1.0,
+       1.0
+      ],
+      "channelMap": [
+       "FL",
+       "FR"
+      ],
+      "softMute": false,
+      "softVolumes": [
+       1.0,
+       1.0
+      ],
+      "monitorMute": false,
+      "monitorVolumes": [
+       1.0,
+       1.0
+      ],
+      "params": [
+       "monitor.channel-volumes",
+       false,
+       "channelmix.disable",
+       false,
+       "channelmix.min-volume",
+       0.0,
+       "channelmix.max-volume",
+       10.0,
+       "channelmix.normalize",
+       false,
+       "channelmix.mix-lfe",
+       true,
+       "channelmix.upmix",
+       true,
+       "channelmix.lfe-cutoff",
+       0.0,
+       "channelmix.fc-cutoff",
+       0.0,
+       "channelmix.rear-delay",
+       0.0,
+       "channelmix.stereo-widen",
+       0.0,
+       "channelmix.hilbert-taps",
+       0,
+       "channelmix.upmix-method",
+       "none",
+       "resample.quality",
+       4,
+       "resample.disable",
+       false,
+       "dither.noise",
+       0,
+       "dither.method",
+       "none",
+       "debug.wav-path",
+       "",
+       "channelmix.lock-volumes",
+       false,
+       "audioconvert.filter-graph.disable",
+       false,
+       "audioconvert.filter-graph",
+       ""
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 47,
+  "type": "PipeWire:Interface:Node",
+  "info": {
+   "state": "suspended",
+   "props": {
+    "audio.position": "[MONO]",
+    "media.class": "Audio/Source/Virtual",
+    "node.description": "Fake USB Mic",
+    "node.driver": true,
+    "node.loop.name": "data-loop.0",
+    "node.name": "fake_mic"
+   },
+   "params": {
+    "Props": [
+     {
+      "volume": 1.0,
+      "mute": false,
+      "channelVolumes": [
+       1.0
+      ],
+      "channelMap": [
+       "MONO"
+      ],
+      "softMute": false,
+      "softVolumes": [
+       1.0
+      ],
+      "monitorMute": false,
+      "monitorVolumes": [
+       1.0
+      ],
+      "params": [
+       "monitor.channel-volumes",
+       false,
+       "channelmix.disable",
+       false,
+       "channelmix.min-volume",
+       0.0,
+       "channelmix.max-volume",
+       10.0,
+       "channelmix.normalize",
+       false,
+       "channelmix.mix-lfe",
+       true,
+       "channelmix.upmix",
+       true,
+       "channelmix.lfe-cutoff",
+       0.0,
+       "channelmix.fc-cutoff",
+       0.0,
+       "channelmix.rear-delay",
+       0.0,
+       "channelmix.stereo-widen",
+       0.0,
+       "channelmix.hilbert-taps",
+       0,
+       "channelmix.upmix-method",
+       "none",
+       "resample.quality",
+       4,
+       "resample.disable",
+       false,
+       "dither.noise",
+       0,
+       "dither.method",
+       "none",
+       "debug.wav-path",
+       "",
+       "channelmix.lock-volumes",
+       false,
+       "audioconvert.filter-graph.disable",
+       false,
+       "audioconvert.filter-graph",
+       ""
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 51,
+  "type": "PipeWire:Interface:Node",
+  "info": {
+   "state": "suspended",
+   "props": {
+    "audio.channels": 1,
+    "audio.position": "[ MONO ]",
+    "audio.rate": 48000,
+    "media.class": "Stream/Input/Audio",
+    "node.autoconnect": true,
+    "node.description": "Clean Mic input",
+    "node.driver-id": 47,
+    "node.group": "filter-chain-317378-7",
+    "node.latency": "480/48000",
+    "node.link-group": "filter-chain-317378-7",
+    "node.loop.name": "data-loop.0",
+    "node.name": "clean_mic.capture",
+    "node.passive": true,
+    "node.target": "fake_mic",
+    "node.virtual": true,
+    "node.want-driver": true
+   },
+   "params": {
+    "Props": [
+     {
+      "volume": 1.0,
+      "mute": false,
+      "channelVolumes": [
+       1.0,
+       1.0
+      ],
+      "channelMap": [
+       "MONO"
+      ],
+      "softMute": false,
+      "softVolumes": [
+       1.0
+      ],
+      "monitorMute": false,
+      "monitorVolumes": [
+       1.0
+      ],
+      "params": [
+       "monitor.channel-volumes",
+       false,
+       "channelmix.disable",
+       false,
+       "channelmix.min-volume",
+       0.0,
+       "channelmix.max-volume",
+       10.0,
+       "channelmix.normalize",
+       false,
+       "channelmix.mix-lfe",
+       true,
+       "channelmix.upmix",
+       true,
+       "channelmix.lfe-cutoff",
+       0.0,
+       "channelmix.fc-cutoff",
+       0.0,
+       "channelmix.rear-delay",
+       0.0,
+       "channelmix.stereo-widen",
+       0.0,
+       "channelmix.hilbert-taps",
+       0,
+       "channelmix.upmix-method",
+       "none",
+       "resample.quality",
+       4,
+       "resample.disable",
+       true,
+       "dither.noise",
+       0,
+       "dither.method",
+       "none",
+       "debug.wav-path",
+       "",
+       "channelmix.lock-volumes",
+       false,
+       "audioconvert.filter-graph.disable",
+       false,
+       "audioconvert.filter-graph",
+       ""
+      ]
+     },
+     {
+      "params": [
+       "rnnoise:VAD Threshold (%)",
+       66,
+       "rnnoise:VAD Grace Period (ms)",
+       200,
+       "rnnoise:Retroactive VAD Grace (ms)",
+       0,
+       "rnnoise:Placeholder",
+       0.0,
+       "rnnoise:Placeholder",
+       0.0
+      ]
+     },
+     {
+      "params": [
+       "rnnoise:VAD Threshold (%)",
+       66,
+       "rnnoise:VAD Grace Period (ms)",
+       200,
+       "rnnoise:Retroactive VAD Grace (ms)",
+       0,
+       "rnnoise:Placeholder",
+       0.0,
+       "rnnoise:Placeholder",
+       0.0
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 52,
+  "type": "PipeWire:Interface:Node",
+  "info": {
+   "state": "suspended",
+   "props": {
+    "audio.channels": 1,
+    "audio.position": "[ MONO ]",
+    "audio.rate": 48000,
+    "clean_mic.managed": true,
+    "media.class": "Audio/Source",
+    "node.autoconnect": true,
+    "node.description": "Clean Mic (noise-cancelled)",
+    "node.driver-id": 47,
+    "node.group": "filter-chain-317378-7",
+    "node.latency": "480/48000",
+    "node.link-group": "filter-chain-317378-7",
+    "node.loop.name": "data-loop.0",
+    "node.name": "clean_mic",
+    "node.trigger": true,
+    "node.virtual": true,
+    "node.want-driver": true
+   },
+   "params": {
+    "Props": [
+     {
+      "volume": 1.0,
+      "mute": false,
+      "channelVolumes": [
+       1.0
+      ],
+      "channelMap": [
+       "MONO"
+      ],
+      "softMute": false,
+      "softVolumes": [
+       1.0
+      ],
+      "monitorMute": false,
+      "monitorVolumes": [
+       1.0
+      ],
+      "params": [
+       "monitor.channel-volumes",
+       false,
+       "channelmix.disable",
+       false,
+       "channelmix.min-volume",
+       0.0,
+       "channelmix.max-volume",
+       10.0,
+       "channelmix.normalize",
+       false,
+       "channelmix.mix-lfe",
+       true,
+       "channelmix.upmix",
+       true,
+       "channelmix.lfe-cutoff",
+       0.0,
+       "channelmix.fc-cutoff",
+       0.0,
+       "channelmix.rear-delay",
+       0.0,
+       "channelmix.stereo-widen",
+       0.0,
+       "channelmix.hilbert-taps",
+       0,
+       "channelmix.upmix-method",
+       "none",
+       "resample.quality",
+       4,
+       "resample.disable",
+       true,
+       "dither.noise",
+       0,
+       "dither.method",
+       "none",
+       "debug.wav-path",
+       "",
+       "channelmix.lock-volumes",
+       false,
+       "audioconvert.filter-graph.disable",
+       false,
+       "audioconvert.filter-graph",
+       ""
+      ]
+     }
+    ]
+   }
+  }
+ }
+]
